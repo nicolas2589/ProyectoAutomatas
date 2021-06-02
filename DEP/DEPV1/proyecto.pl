@@ -67,7 +67,7 @@ es_sintoma_de(tos, gripe_porcina).
 es_sintoma_de(dolor_de_garganta, gripe_porcina).
 es_sintoma_de(dolor_de_cuerpo, gripe_porcina).
 es_sintoma_de(escalofríos, gripe_porcina).
-es_sintoma_de(vómitos, gripe_porcina).
+es_sintoma_de(vomitos, gripe_porcina).
 es_sintoma_de(náuseas, gripe_porcina).
 es_sintoma_de(fatiga, gripe_porcina).
 es_sintoma_de(dolor_de_cabeza, gripe_porcina).

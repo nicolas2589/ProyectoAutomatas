@@ -1,15 +1,16 @@
 es_sintoma_de(tos, gripe).
 es_sintoma_de(escalofríos, gripe).
-es_sintoma_de(congestión_nasal, gripe).
+es_sintoma_de(congestion_nasal, gripe).
 es_sintoma_de(secreción_nasal, gripe).
 es_sintoma_de(fatiga, gripe).
 es_sintoma_de(dolor_de_cabeza, gripe).
 es_sintoma_de(dolor_de_cuerpo, gripe).
+es_sintoma_de(estornudos, gripe).
 
 
-es_sintoma_de(secreción_nasal, resfriado).
+
 es_sintoma_de(estornudos, resfriado).
-es_sintoma_de(congestión_nasal, resfriado).
+es_sintoma_de(congestion_nasal, resfriado).
 es_sintoma_de(dolor_de_cuerpo, resfriado).
 es_sintoma_de(inflamación_nasal, resfriado).
 es_sintoma_de(enrojecimiento, resfriado).
@@ -27,17 +28,17 @@ es_sintoma_de(fiebre, diarrea).
 es_sintoma_de(sed, diarrea).
 
 
-es_sintoma_de(fiebre, covid-19).
-es_sintoma_de(tos, covid-19).
-es_sintoma_de(cansancio, covid-19).
-es_sintoma_de(fatiga, covid-19).
-es_sintoma_de(conjuntivitis, covid-19).
-es_sintoma_de(dolor_de_cuerpo, covid-19).
+es_sintoma_de(fiebre, covid19).
+es_sintoma_de(tos, covid19).
+es_sintoma_de(cansancio, covid19).
+es_sintoma_de(fatiga, covid19).
+es_sintoma_de(conjuntivitis, covid19).
+es_sintoma_de(dolor_de_cuerpo, covid19).
 
 es_sintoma_de(tos, bronquitis).
 es_sintoma_de(fatiga, bronquitis).
 es_sintoma_de(malestar, bronquitis).
-es_sintoma_de(congestión_nasal, bronquitis).
+es_sintoma_de(congestion_nasal, bronquitis).
 es_sintoma_de(dolor_de_garganta, bronquitis).
 es_sintoma_de(dificultad_para_respirar, bronquitis).
 
@@ -56,7 +57,7 @@ es_sintoma_de(dificultad_para_respirar, tuberculosis).
 es_sintoma_de(dolor_de_cuerpo, gripe_aviar).
 es_sintoma_de(fiebre, gripe_aviar).
 es_sintoma_de(malestar, gripe_aviar).
-es_sintoma_de(congestión_nasal, gripe_aviar).
+es_sintoma_de(congestion_nasal, gripe_aviar).
 es_sintoma_de(estornudos, gripe_aviar).
 es_sintoma_de(dolor_de_garganta, gripe_aviar).
 es_sintoma_de(tos, gripe_aviar).
@@ -120,7 +121,7 @@ es_tratamiento_de(sro, diarrea).
 es_tratamiento_de(bismuto, diarrea).
 es_tratamiento_de(loperamida, diarrea).
 
-es_tratamiento_de(vacuna, covid-19).
+es_tratamiento_de(vacuna, covid19).
 es_tratamiento_de(analgésico, bronquitis).
 es_tratamiento_de(antiinflamatorio, bronquitis).
 es_tratamiento_de(narcótico, bronquitis).

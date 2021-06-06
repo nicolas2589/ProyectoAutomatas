@@ -5,13 +5,21 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView
 from django.contrib.auth import login, authenticate
 from .forms import SignUpForm
+from DEPV1 import ConProlog
 # Create your views here.
 
 
+class Index(LoginRequiredMixin, TemplateView):
+    template_name = "DEPV1/index.html"
+    login_url = "/login/"
 
-class Index(LoginRequiredMixin,TemplateView):
-    template_name="DEPV1/index.html"
-    login_url="/login/"
+
+def res_view(request):
+    lista_sintomas = request.POST.getlist('sintomas')
+    consulta=ConProlog.process(lista_sintomas)
+    context = {'qs': consulta}
+    return render(request, "DEPV1/resultado.html", context)
+
 
 def Signup(request):
     if request.method == 'POST':

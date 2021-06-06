@@ -20,6 +20,7 @@ from DEPV1 import views
 
 urlpatterns = [
     path('', views.Index.as_view(), name="index"),
+    path('resultado/', views.res_view, name="resultado"),
     path('admin/', admin.site.urls),
     path('signup/', views.Signup, name="signup"),
     path('DEPV1/', include("DEPV1.urls", namespace="DEPV1")),

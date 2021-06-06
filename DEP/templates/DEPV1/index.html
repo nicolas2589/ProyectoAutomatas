@@ -24,7 +24,7 @@
                 <div class="card shadow mb-4">
                 <!-- Card Header - Accordion -->
                   <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
-                    <h6 class="m-0 font-weight-bold text-primary">Instrucciones</h6>
+                    <h6 class="m-0 font-weight-bold text-success">Instrucciones</h6>
                   </a>
                   <!-- Card Content - Collapse -->
                   <div class="collapse show" id="collapseCardExample" style="">
@@ -33,165 +33,170 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-
+                <form action="{% url 'resultado' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="row">
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                          <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                            <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample1">
-                              <h6 class="m-0 font-weight-bold text-primary">Sintomas Corporales</h6>
-                            </a>
-                            <!-- Card Content - Collapse -->
-                            <div class="collapse show" id="collapseCardExample1" style="">
-                              <div class="card-body">
-                                <div class="form-group">
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Dolor de abdomen
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Dolor de cabeza
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Dolor de cuerpo
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Fatiga
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Perdida de peso
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Cansancio
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Escalofrios
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Deshidratacion
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Sed
-                                    </label>
+                   <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card shadow mb-4">
+                            <!-- Card Header - Accordion -->
+                              <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample1">
+                                <h6 class="m-0 font-weight-bold text-success">Sintomas Corporales</h6>
+                              </a>
+                              <!-- Card Content - Collapse -->
+                              <div class="collapse show" id="collapseCardExample1" style="">
+                                <div class="card-body">
+                                  <div class="form-group">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="dolor_de_abdomen" name='sintomas'> Dolor de abdomen
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="dolor_de_cabeza" name='sintomas'> Dolor de cabeza
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="dolor_de_cuerpo" name='sintomas'> Dolor de cuerpo
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="fatiga" name='sintomas'> Fatiga
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="perdida_de_peso" name='sintomas'> Perdida de peso
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="cansancio" name='sintomas'> Cansancio
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="escalofrios" name='sintomas'> Escalofrios
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="deshidratacion" name='sintomas'> Deshidratacion
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="sed" name='sintomas'> Sed
+                                      </label>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+                   </div>
 
                         <!-- Earnings (Annual) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                          <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                            <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample2">
-                              <h6 class="m-0 font-weight-bold text-primary">Sintomas Respiratorios</h6>
-                            </a>
-                            <!-- Card Content - Collapse -->
-                            <div class="collapse show" id="collapseCardExample2" style="">
-                              <div class="card-body">
-                                <div class="form-group">
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Dolor de garganta
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Secrecion nasal
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Congestion nasal
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Tos
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Flemas
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Estornudos
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Dificultad Respiratoria
-                                    </label>
+                   <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card shadow mb-4">
+                            <!-- Card Header - Accordion -->
+                              <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample2">
+                                <h6 class="m-0 font-weight-bold text-success">Sintomas Respiratorios</h6>
+                              </a>
+                              <!-- Card Content - Collapse -->
+                              <div class="collapse show" id="collapseCardExample2" style="">
+                                <div class="card-body">
+                                  <div class="form-group">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="dolor_de_garganta" name='sintomas'> Dolor de garganta
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="secrecion_nasal" name='sintomas'> Secrecion nasal
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="congestion_nasal" name='sintomas'> Congestion nasal
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="tos" name='sintomas'> Tos
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="flemas" name='sintomas'> Flemas
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="estornudos" name='sintomas'> Estornudos
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="dificultad_para_respirar" name='sintomas'> Dificultad Respiratoria
+                                      </label>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+                   </div>
 
                         <!-- Tasks Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                          <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                            <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample3">
-                              <h6 class="m-0 font-weight-bold text-primary">Sintomas Estomacales</h6>
-                            </a>
-                            <!-- Card Content - Collapse -->
-                            <div class="collapse show" id="collapseCardExample3" style="">
-                              <div class="card-body">
-                                <div class="form-group">
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Vomito
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Malestar
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Colicos
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Flatulencias
-                                    </label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value=""> Meteorismo
-                                    </label>
-                                  </div>
+                   <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card shadow mb-4">
+                            <!-- Card Header - Accordion -->
+                              <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample3">
+                                <h6 class="m-0 font-weight-bold text-success">Sintomas Estomacales</h6>
+                              </a>
+                              <!-- Card Content - Collapse -->
+                              <div class="collapse show" id="collapseCardExample3" style="">
+                                <div class="card-body">
+                                  <div class="form-group">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="vomito" name='sintomas'> Vomito
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="malestar" name='sintomas'> Malestar
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="colicos" name='sintomas'> Colicos
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="flatulencias" name='sintomas'> Flatulencias
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="meteorismo" name='sintomas'> Meteorismo
+                                      </label>
+                                    </div>
 
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                    </div>
+                   </div>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-user btn-block">
+                      Consultar
+                  </button>
+                </form>
               </div>
             </div>
           </div>

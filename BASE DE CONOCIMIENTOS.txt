@@ -1,28 +1,28 @@
 Es_sintoma_de(tos, gripe).
-Es_sintoma_de(escalofríos, gripe).
-Es_sintoma_de(congestión_nasal, gripe).
-Es_sintoma_de(secreción_nasal, gripe).
+Es_sintoma_de(escalofrios, gripe).
+Es_sintoma_de(congestion_nasal, gripe).
+Es_sintoma_de(secrecion_nasal, gripe).
 Es_sintoma_de(fatiga, gripe).
 Es_sintoma_de(dolor_de_cabeza, gripe).
 Es_sintoma_de(dolor_de_cuerpo, gripe).
 
 
-Es_sintoma_de(secreción_nasal, resfriado).
+Es_sintoma_de(secrecion_nasal, resfriado).
 Es_sintoma_de(estornudos, resfriado).
-Es_sintoma_de(congestión_nasal, resfriado).
+Es_sintoma_de(congestion_nasal, resfriado).
 Es_sintoma_de(dolor_de_cuerpo, resfriado).
-Es_sintoma_de(inflamación_nasal, resfriado).
+Es_sintoma_de(inflamacion_nasal, resfriado).
 Es_sintoma_de(enrojecimiento, resfriado).
 
 
 Es_sintoma_de(dolor_de_abdomen, diarrea).
-Es_sintoma_de(cólicos, diarrea).
+Es_sintoma_de(colicos, diarrea).
 Es_sintoma_de(flatulencias, diarrea).
-Es_sintoma_de(indigestión, diarrea).
+Es_sintoma_de(indigestion, diarrea).
 Es_sintoma_de(meteorismo, diarrea).
-Es_sintoma_de(náuseas, diarrea).
-Es_sintoma_de(vómitos, diarrea).
-Es_sintoma_de(deshidratación, diarrea).
+Es_sintoma_de(nauseas, diarrea).
+Es_sintoma_de(vomitos, diarrea).
+Es_sintoma_de(deshidratacion, diarrea).
 Es_sintoma_de(fiebre, diarrea).
 Es_sintoma_de(sed, diarrea).
 
@@ -37,7 +37,7 @@ Es_sintoma_de(dolor_de_cuerpo, covid-19).
 Es_sintoma_de(tos, bronquitis).
 Es_sintoma_de(fatiga, bronquitis).
 Es_sintoma_de(malestar, bronquitis).
-Es_sintoma_de(congestión_nasal, bronquitis).
+Es_sintoma_de(congestion_nasal, bronquitis).
 Es_sintoma_de(dolor_de_garganta, bronquitis).
 Es_sintoma_de(dificultad_para_respirar, bronquitis).
 

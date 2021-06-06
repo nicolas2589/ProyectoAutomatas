@@ -44,11 +44,11 @@ Es_sintoma_de(dificultad_para_respirar, bronquitis).
 
 Es_sintoma_de(tos, tuberculosis).
 Es_sintoma_de(dolor_de_pecho, tuberculosis).
-Es_sintoma_de(escalofríos, tuberculosis).
+Es_sintoma_de(escalofrios, tuberculosis).
 Es_sintoma_de(fatiga, tuberculosis).
 Es_sintoma_de(fiebre, tuberculosis).
 Es_sintoma_de(malestar, tuberculosis).
-Es_sintoma_de(sudoración, tuberculosis).
+Es_sintoma_de(sudoracion, tuberculosis).
 Es_sintoma_de(flemas, tuberculosis).
 Es_sintoma_de(perdida_de_peso, tuberculosis).
 Es_sintoma_de(dificultad_para_respirar, tuberculosis).
@@ -56,7 +56,7 @@ Es_sintoma_de(dificultad_para_respirar, tuberculosis).
 Es_sintoma_de(dolor_de_cuerpo, gripe_aviar).
 Es_sintoma_de(fiebre, gripe_aviar).
 Es_sintoma_de(malestar, gripe_aviar).
-Es_sintoma_de(congestión_nasal, gripe_aviar).
+Es_sintoma_de(congestion_nasal, gripe_aviar).
 Es_sintoma_de(estornudos, gripe_aviar).
 Es_sintoma_de(dolor_de_garganta, gripe_aviar).
 Es_sintoma_de(tos, gripe_aviar).
@@ -66,9 +66,9 @@ Es_sintoma_de(fiebre, gripe_porcina).
 Es_sintoma_de(tos, gripe_porcina).
 Es_sintoma_de(dolor_de_garganta, gripe_porcina).
 Es_sintoma_de(dolor_de_cuerpo, gripe_porcina).
-Es_sintoma_de(escalofríos, gripe_porcina).
-Es_sintoma_de(vómitos, gripe_porcina).
-Es_sintoma_de(náuseas, gripe_porcina).
+Es_sintoma_de(escalofrios, gripe_porcina).
+Es_sintoma_de(vomitos, gripe_porcina).
+Es_sintoma_de(nauseas, gripe_porcina).
 Es_sintoma_de(fatiga, gripe_porcina).
 Es_sintoma_de(dolor_de_cabeza, gripe_porcina).
 
@@ -76,10 +76,10 @@ Es_sintoma_de(dolor_de_cabeza, gripe_porcina).
 Es_sintoma_de(tos, neumonía).
 Es_sintoma_de(flemas, neumonía).
 Es_sintoma_de(fiebre, neumonía).
-Es_sintoma_de(escalofríos, neumonía).
+Es_sintoma_de(escalofrios, neumonía).
 Es_sintoma_de(fatiga, neumonía).
 Es_sintoma_de(malestar, neumonía).
-Es_sintoma_de(sudoración, neumonía).
+Es_sintoma_de(sudoracion, neumonía).
 Es_sintoma_de(dificultad_para_respirar, neumonía).
 
 
@@ -99,9 +99,9 @@ Es_tratamiento_de(ibuprofeno, fiebre).
 Es_tratamiento_de(antitusígenos, tos).
 Es_tratamiento_de(antihistamínicos, secreción_nasal).
 
-Es_tratamiento_de(sro, vómitos).
+Es_tratamiento_de(sro, vomitos).
 
-Es_tratamiento_de(paracetamol, escalofríos).
+Es_tratamiento_de(paracetamol, escalofrios).
 
 
 /* tratamientos para enfermedades */

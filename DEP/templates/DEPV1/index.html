@@ -24,12 +24,21 @@
                 <div class="card shadow mb-4">
                 <!-- Card Header - Accordion -->
                   <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+<<<<<<< HEAD
                     <h6 class="m-0 font-weight-bold text-success">Instrucciones</h6>
+=======
+                    <h6 class="m-0 font-weight-bold text-primary">Instrucciones para el uso del programa:</h6>
+>>>>>>> 8b04dc8b4ae98a7d24ba04a7a85c7fbf7fcc54be
                   </a>
                   <!-- Card Content - Collapse -->
                   <div class="collapse show" id="collapseCardExample" style="">
                     <div class="card-body">
-                      Aqui poner instrucciones
+                      1: Seleccionar los sintomas de entre las tres categorias que se exponen.
+                      2: Para seleccionar un sintoma, hacer click sobre el checkbox correspondiente al sintoma.
+                      3: Se puede seleccionar mas de un sintoma por categorias.
+                      4: Una vez seleccionados todos los sintomas para la consulta, presionar el boton de "DIAGNOSTICAR"
+                      5: Esperar el resultado de la busqueda.
+                      NOTA: Mientras mas sintomas sean introducidos, mejor es el diagnostico; introducir limitadas cantidades de sintomas arrojara resultados ambiguos.
                     </div>
                   </div>
                 </div>
@@ -37,6 +46,7 @@
                   {% csrf_token %}
                   <div class="row">
                         <!-- Earnings (Monthly) Card Example -->
+<<<<<<< HEAD
                    <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card shadow mb-4">
                             <!-- Card Header - Accordion -->
@@ -92,6 +102,82 @@
                                         <input type="checkbox" value="sed" name='sintomas'> Sed
                                       </label>
                                     </div>
+=======
+                        <div class="col-xl-4 col-md-6 mb-4">
+                          <div class="card shadow mb-4">
+                          <!-- Card Header - Accordion -->
+                            <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample1">
+                              <h6 class="m-0 font-weight-bold text-primary">Sintomas Corporales y otros</h6>
+                            </a>
+                            <!-- Card Content - Collapse -->
+                            <div class="collapse show" id="collapseCardExample1" style="">
+                              <div class="card-body">
+                                <div class="form-group">
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Dolor de abdomen
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Dolor de cabeza
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Dolor de cuerpo
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Prueba COVID
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Conjuntivitis
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Fatiga
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Perdida de peso
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Sudoracion
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Cansancio
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Escalofrios
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Fiebre
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Deshidratacion
+                                    </label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value=""> Sed
+                                    </label>
+>>>>>>> 8b04dc8b4ae98a7d24ba04a7a85c7fbf7fcc54be
                                   </div>
                                 </div>
                               </div>

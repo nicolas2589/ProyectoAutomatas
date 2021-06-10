@@ -97,7 +97,7 @@ Es_tratamiento_de(paracetamol, fiebre).
 Es_tratamiento_de(ibuprofeno, fiebre).
 
 Es_tratamiento_de(antitusígenos, tos).
-Es_tratamiento_de(antihistamínicos, secreción_nasal).
+Es_tratamiento_de(antihistamínicos, secrecion_nasal).
 
 Es_tratamiento_de(sro, vomitos).
 
@@ -142,5 +142,5 @@ Es_tratamiento_de(descongestivo, gripe_porcina).
 Es_tratamiento_de(analgésico, gripe_porcina).
 Es_tratamiento_de(antiinflamatorio, gripe_porcina).
 
-Es_tratamiento_de(antibiótico, neumonía).
-Es_tratamiento_de(penicilina, neumonía).
+Es_tratamiento_de(antibiótico, neumonia).
+Es_tratamiento_de(penicilina, neumonia).

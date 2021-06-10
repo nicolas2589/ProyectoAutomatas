@@ -96,8 +96,8 @@ es_tratamiento_de(naproxeno, dolor_de_cuerpo).
 es_tratamiento_de(paracetamol, fiebre).
 es_tratamiento_de(ibuprofeno, fiebre).
 
-es_tratamiento_de(antitusígenos, tos).
-es_tratamiento_de(antihistamínicos, secrecion_nasal).
+es_tratamiento_de(antitusígeno, tos).
+es_tratamiento_de(antihistamínico, secrecion_nasal).
 
 es_tratamiento_de(sro, vomitos).
 

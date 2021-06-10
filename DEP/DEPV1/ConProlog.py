@@ -29,8 +29,10 @@
 
 from multiprocessing import Pool
 
+
 def process(data):
     return pool.apply(dowork, (data,))
+
 
 def initialise():
     global prolog
@@ -38,15 +40,17 @@ def initialise():
     prolog = Prolog()
     prolog.consult("DEPV1/proyecto.pl")
 
+
 def dowork(data):
     global prolog
+    res = []
     for var in data:
-        res=[]
         str1 = " "
         str1 += var
         c = list(prolog.query("es_sintoma_de("+str1+",X)"))
         for txt in c:
-            res.append(str1+ " es sintoma de "+ txt["X"])        
+            res.append(txt["X"])
     return res
+
 
 pool = Pool(None, initialise)

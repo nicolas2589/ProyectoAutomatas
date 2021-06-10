@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView
 from django.contrib.auth import login, authenticate
 from .forms import SignUpForm
-from DEPV1 import ConProlog
+from DEPV1 import ConProlog, ConProlog2, procedimiento
 # Create your views here.
 
 
@@ -14,10 +15,18 @@ class Index(LoginRequiredMixin, TemplateView):
     login_url = "/login/"
 
 
+@login_required
 def res_view(request):
     lista_sintomas = request.POST.getlist('sintomas')
-    consulta=ConProlog.process(lista_sintomas)
-    context = {'qs': consulta}
+    if lista_sintomas:
+        var1 = ConProlog.process(lista_sintomas)
+        var2 = procedimiento.limpiarLista(var1)
+        consulta1 = procedimiento.calcularProbabilidad(var2, var1)
+        var3 = procedimiento.limpiarSintomas(ConProlog2.process(var2))
+        consulta2 = var3
+        context = {'qs': consulta1, 'qs2': consulta2}
+    else:
+        context = {}
     return render(request, "DEPV1/resultado.html", context)
 
 

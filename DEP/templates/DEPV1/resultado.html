@@ -21,9 +21,14 @@
                 {% if qs %}
                   {% for texto in qs %}
                           {{ texto }}
+                          <br>
+                          Medicamento recomendado:
                           {% for key, value in qs2.items %}
                             {% if key in texto %}
-                              {{ value }}
+                              {% for texto2 in value %}
+                              <br>
+                                {{ texto2 }}
+                              {% endfor %}
                             {% endif %}
                           {% endfor %}
                           <hr class="bf-success">

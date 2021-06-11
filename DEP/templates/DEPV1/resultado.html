@@ -21,7 +21,7 @@
                 {% if qs %}
                   {% for texto in qs %}
                           {{ texto }}
-                          <br class="bg-danger">
+                          <br class="text-danger">
                           Medicamento recomendado:
                           {% for key, value in qs2.items %}
                             {% if key in texto %}

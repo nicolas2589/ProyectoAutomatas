@@ -17,21 +17,21 @@
                   <h1 class="h1 text-gray-900 mb-4">DEP</h1>
                   <h1 class="h6 text-gray-900 mb-4">Diagnostico de enfermedades por prolog</h1>
                 </div>
-                <hr class="bg-danger">
+                <hr>
                 {% if qs %}
                   {% for texto in qs %}
                           {{ texto }}
-                          <br>
+                          <br class="bg-danger">
                           Medicamento recomendado:
                           {% for key, value in qs2.items %}
                             {% if key in texto %}
                               {% for texto2 in value %}
-                              <br>
+                              <br class="bg-success">
                                 {{ texto2 }}
                               {% endfor %}
                             {% endif %}
                           {% endfor %}
-                          <hr class="bf-success">
+                          <hr>
                   {% endfor %}
                 {% else %}
                   Por favor ingrese un valor valido

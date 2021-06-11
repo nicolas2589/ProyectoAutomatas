@@ -21,6 +21,8 @@
                 {% if qs %}
                   {% for texto in qs %}
                           {{ texto }}
+                          <br>
+                          Medicamento recomendado:
                           {% for key, value in qs2.items %}
                             {% if key in texto %}
                               {% for texto2 in value %}

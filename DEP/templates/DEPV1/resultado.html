@@ -17,7 +17,7 @@
                   <h1 class="h1 text-gray-900 mb-4">DEP</h1>
                   <h1 class="h6 text-gray-900 mb-4">Diagnostico de enfermedades por prolog</h1>
                 </div>
-                <hr>
+                <hr class="bg-danger">
                 {% if qs %}
                   {% for texto in qs %}
                           {{ texto }}
@@ -26,7 +26,7 @@
                               {{ value }}
                             {% endif %}
                           {% endfor %}
-                          <hr>
+                          <hr class="bf-success">
                   {% endfor %}
                 {% else %}
                   Por favor ingrese un valor valido
